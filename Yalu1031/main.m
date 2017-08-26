@@ -7,6 +7,8 @@
 #include "iosurface_utils.h"
 #include "rwx.h"
 #include "post_exploit.h"
+#import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
 #define KERNEL_MAGIC 							(0xfeedfacf)
 
@@ -15,6 +17,12 @@
  * Description:		Prints a welcome message. Includes credits.
  * Returns:			void.
  */
+
+int main(int argc, char * argv[]) {
+  @autoreleasepool {
+      return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+  }
+}
 
 static
 void print_welcome_message() {

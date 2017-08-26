@@ -14,4 +14,6 @@
 #define ERROR_LOG(fmt, ...) LOG_LOG('-', fmt, ##__VA_ARGS__)
 #endif /* NDEBUG */
 
+void logMsg(char* msg);
+
 #endif /* __LOG_H_ */
